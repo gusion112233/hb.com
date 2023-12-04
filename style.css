@@ -1,0 +1,502 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* sign up */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 30%;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2)
+}
+.center h2{
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: solid white;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    font-family: 'Rajdhani', sans-serif;
+}
+.txt_field span ::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+    font-family: 'Rajdhani', sans-serif;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+top: -5px;
+color: white;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.center i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #adadad;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+}
+input[type="text"]{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+}
+input[type="password"]{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50%;
+    border: 2px solid;
+    background: transparent;
+    border-radius: 25px;
+    font-size: 18px;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+input[type="submit"]:hover{
+    border-color: white;
+    transition: .5s;
+    text-decoration: underline;
+}  
+.signup-link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    text-decoration: underline;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+.signup-link a{
+    color: white;
+    text-decoration: none;  
+}
+.signup-link a:hover{
+    text-decoration: underline;
+}
+p{
+    color: white;
+    font-family: 'Rajdhani', sans-serif
+}
+.remember-forget{
+    color: white;
+    font-family: 'Rajdhani', sans-serif
+}
+/* sign up */
+
+
+
+.Space{
+    
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-weight: bolder;
+    margin-top: 40px;
+    
+}   
+
+
+
+
+
+
+/* navbar top */
+ .navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+ }
+ .social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+ }
+ .social-link i img:hover{
+    background-color: red;
+    border-radius: 70px;
+ }
+ @media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+ }
+ .logo h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 60px;
+    text-align: right;
+    margin-left: 80px;
+ }
+ .logo p{
+    color: black;
+    margin-left: 70px;
+ }
+ 
+ @media screen and (max-width:420px){
+    .logo h2{
+        font-size: 20px;
+    }
+ }
+ .icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5S ease;
+ }
+.icons i img:hover{
+   background-color: red;
+   border-radius: 70px;
+}
+ @media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+ }
+/* navbar top */
+
+
+
+
+
+
+
+
+/* main content */
+.background-clip{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* navbar */
+#navbar-color{
+    background-color: transparent;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 50px;
+    font-weight: bolder;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    
+}
+.nav-link:hover{
+    color: red;
+}
+/* navbar */
+/* content */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1{
+    font-weight: bold;
+    font-size: 50px;
+   color: white;
+   font-family: 'Rajdhani', sans-serif;
+}
+.content p{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Rajdhani', sans-serif;
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid white;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 40px;
+    color: white;
+}
+#btn1 button:hover{
+    background-color: red;
+}
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+/* content */
+/* main content */
+
+
+
+
+
+
+
+/* card1 */
+.container h3{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.container h5{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+}
+.container p{
+    font-family: 'Rajdhani', sans-serif;
+}
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    border-radius: 40px;
+}
+#btn2 button:hover{
+   background-color: red;
+}
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-20px);
+}
+/* card1 */
+
+
+
+
+
+
+
+
+
+
+/* card2 */
+.container p{
+    font-family: 'Rajdhani', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+.container h3{
+    font-family: 'Rajdhani', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+#tpc{
+    text-align: center;    
+}
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-20px);
+}
+/* card2 */
+
+
+
+
+
+
+
+
+
+/* card3 */ 
+#c p{
+    font-weight: bold;
+
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+}
+#btn3 button:hover{
+    background-color: red;
+}
+
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+
+    }
+}
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-20px);
+}
+/* card3 */
+
+
+
+
+
+
+.container h1{
+    font-family: 'Rajdhani', sans-serif;
+}
+#btn4{
+    text-align: center;
+}
+#btn4 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 40px;
+}
+#btn4 button:hover{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* foorter */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+color: white;
+padding-top: 30px;
+font-family: 'Rajdhani', sans-serif;
+
+}
+#footer p{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+.credite{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+
+/* foorter */
+
+
+#btn7{
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    font-size: 15px;
+   
+}
+#btn7 button:hover{
+    background-color: red;
+}
